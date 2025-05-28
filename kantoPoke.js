@@ -6,13 +6,16 @@ console.log()
 console.log("1 - Venussaur  |   2 - Charizard |   3 - Blastoise");
 
 let pokemons = ["Vanussaur", "Charizard", "Blastoise"];
+let vidaPokemon = [364, 360, 362];
 
 let escolhaJogador1 = readline.questionFloat("Digite aqui sua escolha: ");
+let vidaPokemonJogador1 = 0;
 let escolhaValida1 = false;
 while (escolhaValida1 === false) {
     switch (escolhaJogador1) {
         case 1:
             escolhaJogador1 = pokemons[0];
+            vidaPokemonJogador1 = vidaPokemon[0];
             escolhaValida1 = true;
             console.log();
             console.log(`- Jogador 1 escolheu ${escolhaJogador1}`);
@@ -20,6 +23,7 @@ while (escolhaValida1 === false) {
             break;
         case 2:
             escolhaJogador1 = pokemons[1];
+            vidaPokemonJogador1 = vidaPokemon[1];
             escolhaValida1 = true;
             console.log();
             console.log(`- Jogador 1 escolheu ${escolhaJogador1}`);
@@ -27,6 +31,7 @@ while (escolhaValida1 === false) {
             break;
         case 3:
             escolhaJogador1 = pokemons[2];
+            vidaPokemonJogador1 = vidaPokemon[2];
             escolhaValida1 = true;
             console.log();
             console.log(`- Jogador 1 escolheu ${escolhaJogador1}`);
@@ -42,11 +47,13 @@ while (escolhaValida1 === false) {
 
 console.log();
 let escolhaJogador2 = readline.questionFloat("Sua vez jogador 2, escolha seu pokemon: ");
+let vidaPokemonJogador2 = 0;
 let escolhaValida2 = false;
 while (escolhaValida2 === false) {
     switch (escolhaJogador2) {
         case 1:
             escolhaJogador2 = pokemons[0];
+            vidaPokemonJogador2 = vidaPokemon[0];
             escolhaValida2 = true;
             console.log();
             console.log(`- Jogador 2 escolheu ${escolhaJogador2}`);
@@ -54,6 +61,7 @@ while (escolhaValida2 === false) {
             break;
         case 2:
             escolhaJogador2 = pokemons[1];
+            vidaPokemonJogador2 = vidaPokemon[1];
             escolhaValida2 = true;
             console.log();
             console.log(`- Jogador 2 escolheu ${escolhaJogador2}`);
@@ -61,6 +69,7 @@ while (escolhaValida2 === false) {
             break;
         case 3:
             escolhaJogador2 = pokemons[2];
+            vidaPokemonJogador2 = vidaPokemon[2];
             escolhaValida2 = true;
             console.log();
             console.log(`- Jogador 2 escolheu ${escolhaJogador2}`);
@@ -73,3 +82,9 @@ while (escolhaValida2 === false) {
             escolhaJogador1 = readline.questionFloat("Digite aqui sua escolha: ");
     }
 }
+
+console.log();
+console.log("Vamos para a batalha!!!");
+console.log();
+console.log(`${escolhaJogador1} HP: ${vidaPokemonJogador1}`);
+console.log(`                   ${escolhaJogador2} HP: ${vidaPokemonJogador2}`);
