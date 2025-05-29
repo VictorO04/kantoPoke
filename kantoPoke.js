@@ -5,7 +5,7 @@ console.log("Escolha seu pokemon");
 console.log()
 console.log("1 - Venussaur  |   2 - Charizard |   3 - Blastoise");
 
-let pokemons = ["Vanussaur", "Charizard", "Blastoise"];
+let pokemons = ["Venussaur", "Charizard", "Blastoise"];
 let vidaPokemon = [364, 360, 362];
 
 let escolhaJogador1 = readline.questionFloat("Digite aqui sua escolha: ");
@@ -79,7 +79,7 @@ while (escolhaValida2 === false) {
             escolhaValida2 = false;
             console.log();
             console.log("Escolha um pokémon válido");
-            escolhaJogador1 = readline.questionFloat("Digite aqui sua escolha: ");
+            escolhaJogador2 = readline.questionFloat("Digite aqui sua escolha: ");
     }
 }
 
